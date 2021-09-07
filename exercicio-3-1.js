@@ -9,7 +9,7 @@ let dados = [
 let numeroPar = dados.filter((pares) => pares % 2 === 0);
 let numeroImpar = dados.filter((impares) => impares % 2 !== 0);
 
-let ordernarPar = numeroPar.sort((n1, n2) =>{
+let ordenarPar = numeroPar.sort((n1, n2) =>{
     if(n1 === n2) return 0;
     if(n1 < n2) return -1;
     if(n1 > n2) return 1;
@@ -21,11 +21,6 @@ let ordenarImpar = numeroImpar.sort((n1,n2) =>{
     if(n1 > n2) return 1;
 })
 
-console.log();
-
-console.log(ordernarPar, ordenarImpar); // 1. Ordene esse array de um jeito que o número pares venham antes dos ímpares.
-
-
-console.log(ordernarPar.concat(ordenarImpar));
+console.log(ordenarPar.concat(ordenarImpar));
 
 
