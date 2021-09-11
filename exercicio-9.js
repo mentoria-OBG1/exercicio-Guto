@@ -4,10 +4,10 @@
 function incrementNum() {
   let num = 0;
   setInterval(() => {
-    while (true) {
+  
       num++;
       console.log(num);
-    }
+    
   }, 1200);
 }
 incrementNum()

@@ -13,12 +13,3 @@ async function retornoApos2Segundos() {
 retornoApos2Segundos();
 
 
-function retornoApos2SegundosPromise() {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve('done!')
-      }, 1200);
-    });
-  }
-
-  retornoApos2SegundosPromise().then(console.log);
