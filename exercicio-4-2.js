@@ -2,7 +2,8 @@
 
 
 function contadorPalavras(text) {
-    return text.length;
+    const countText = text.split(' ');
+    return `Nesse texto tem ${countText.length} palavras`
 }
 
-console.log(contadorPalavras('Mentoria'));
+console.log(contadorPalavras('Mentoria do Bruno Germano'));
